@@ -10,6 +10,11 @@ ui["akinsho/bufferline.nvim"] = {
 	event = { "BufReadPost", "BufAdd", "BufNewFile" },
 	config = require("ui.bufferline"),
 }
+ui["projekt0n/github-nvim-theme"] = {
+	lazy = false,
+	name = "github",
+	config = require("ui.github"),
+}
 ui["Jint-lzxy/nvim"] = {
 	lazy = false,
 	branch = "refactor/syntax-highlighting",

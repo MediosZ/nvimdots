@@ -11,7 +11,7 @@ settings["format_on_save"] = true
 
 -- Set it to false if the notification after formatting is annoying.
 ---@type boolean
-settings["format_notify"] = true
+settings["format_notify"] = false
 
 -- Set it to false if diagnostics virtual text is annoying.
 -- If disabled, you may browse lsp diagnostics using trouble.nvim (press `gt` to toggle it).
@@ -46,7 +46,8 @@ settings["palette_overwrite"] = {}
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`, `edge`, `nord`.
 ---@type string
-settings["colorscheme"] = "catppuccin"
+-- settings["colorscheme"] = "catppuccin"
+settings["colorscheme"] = "github_light"
 
 -- Set it to true if your terminal has transparent background.
 ---@type boolean

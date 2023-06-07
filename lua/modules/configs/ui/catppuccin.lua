@@ -3,7 +3,7 @@ return function()
 	local clear = {}
 
 	require("catppuccin").setup({
-		flavour = "mocha", -- Can be one of: latte, frappe, macchiato, mocha
+		flavour = "latte", -- Can be one of: latte, frappe, macchiato, mocha
 		background = { light = "latte", dark = "mocha" },
 		dim_inactive = {
 			enabled = false,
