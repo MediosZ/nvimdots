@@ -27,4 +27,14 @@ lang["chrisbra/csv.vim"] = {
 	lazy = true,
 	ft = "csv",
 }
+-- lang["nvim-orgmode/orgmode"] = {
+-- 	lazy = true,
+-- 	ft = "org",
+-- }
+lang["nvim-neorg/neorg"] = {
+	lazy = false,
+	build = ":Neorg sync-parsers",
+	config = require("lang.neorg"),
+	dependencies = { "nvim-lua/plenary.nvim" },
+}
 return lang
