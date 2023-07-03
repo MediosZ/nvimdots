@@ -87,7 +87,7 @@ local plug_map = {
 
 	-- Plugin suda.vim
 	["n|<A-s>"] = map_cu("SudaWrite"):with_silent():with_noremap():with_desc("editn: Save file using sudo"),
-	["n|<leader>q"] = map_cmd(":Ex"):with_noremap():with_desc("Return to files"),
+	["n|<leader>q"] = map_cmd("<Cmd>Ex<CR>"):with_noremap():with_desc("Return to files"),
 }
 
 bind.nvim_load_mapping(plug_map)
