@@ -114,8 +114,8 @@ editor["nvim-treesitter/nvim-treesitter"] = {
 	},
 }
 
-editor["Pocco81/auto-save.nvim"] = {
-	lazy = false,
-	config = require("editor.autosave"),
-}
+-- editor["Pocco81/auto-save.nvim"] = {
+-- 	lazy = false,
+-- 	config = require("editor.autosave"),
+-- }
 return editor
