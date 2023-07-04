@@ -115,4 +115,10 @@ tool["mfussenegger/nvim-dap"] = {
 	},
 }
 
+tool["ThePrimeagen/harpoon"] = {
+	lazy = false,
+	config = require("tool.harpoon"),
+	dependencies = { "nvim-lua/plenary.nvim" },
+}
+
 return tool

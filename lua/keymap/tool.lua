@@ -65,7 +65,23 @@ local plug_map = {
 		:with_noremap()
 		:with_silent()
 		:with_desc("git: Toggle lazygit"),
-
+	-- Plugin: harpoon
+	["n|<leader>ha"] = map_cmd("<Cmd>lua require('harpoon.mark').add_file()<CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("harpoon: Add file"),
+	["n|<leader>hm"] = map_cmd("<Cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("harpoon: Open Menu"),
+	["n|<leader>hj"] = map_cmd("<Cmd>lua require('harpoon.ui').nav_next()<CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("harpoon: Next file"),
+	["n|<leader>hk"] = map_cmd("<Cmd>lua require('harpoon.ui').nav_prev()<CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("harpoon: Prev file"),
 	-- Plugin: trouble
 	["n|gt"] = map_cr("TroubleToggle"):with_noremap():with_silent():with_desc("lsp: Toggle trouble list"),
 	["n|<leader>tr"] = map_cr("TroubleToggle lsp_references")
