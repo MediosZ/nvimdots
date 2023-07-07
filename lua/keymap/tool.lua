@@ -18,7 +18,11 @@ local plug_map = {
 
 	-- Plugin: sniprun
 	["v|<leader>r"] = map_cr("SnipRun"):with_noremap():with_silent():with_desc("tool: Run code by range"),
-	["n|<leader>r"] = map_cu([[%SnipRun]]):with_noremap():with_silent():with_desc("tool: Run code by file"),
+	-- ["n|<leader>r"] = map_cu([[%SnipRun]]):with_noremap():with_silent():with_desc("tool: Run code by file"),
+	["n|<leader>r"] = map_cmd("<Cmd>let b:caret=winsaveview() <CR> | <Cmd>%SnipRun <CR>| <Cmd>call winrestview(b:caret) <CR>")
+		:with_noremap()
+		:with_silent()
+		:with_desc("tool: Run code by file"),
 
 	-- Plugin: toggleterm
 	["t|<Esc><Esc>"] = map_cmd([[<C-\><C-n>]]):with_noremap():with_silent(), -- switch to normal mode in terminal.
