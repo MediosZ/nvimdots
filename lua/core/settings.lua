@@ -47,7 +47,7 @@ settings["palette_overwrite"] = {}
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`, `edge`, `nord`.
 ---@type string
 -- settings["colorscheme"] = "catppuccin"
-settings["colorscheme"] = "github_light"
+settings["colorscheme"] = "catppuccin-latte"
 
 -- Set it to true if your terminal has transparent background.
 ---@type boolean
