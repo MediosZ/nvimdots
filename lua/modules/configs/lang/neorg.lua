@@ -6,8 +6,9 @@ return function()
 			["core.dirman"] = { -- Manages Neorg workspaces
 				config = {
 					workspaces = {
-						notes = "~/notes",
+						notes = "~/Nutstore Files/Neorg",
 					},
+					default_workspace = "notes",
 				},
 			},
 		},
