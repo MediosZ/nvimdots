@@ -87,6 +87,7 @@ local plug_map = {
 		:with_silent()
 		:with_desc("harpoon: Prev file"),
 	-- Plugin: trouble
+	["n|<localleader>gt"] = map_cr(":lua print('Hello')"):with_noremap():with_silent():with_desc("Just print Hello"),
 	["n|gt"] = map_cr("TroubleToggle"):with_noremap():with_silent():with_desc("lsp: Toggle trouble list"),
 	["n|<leader>tr"] = map_cr("TroubleToggle lsp_references")
 		:with_noremap()
