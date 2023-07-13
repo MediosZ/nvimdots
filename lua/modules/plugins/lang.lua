@@ -32,7 +32,7 @@ lang["chrisbra/csv.vim"] = {
 -- 	ft = "org",
 -- }
 lang["nvim-neorg/neorg"] = {
-	lazy = false,
+	-- lazy = false,
 	build = ":Neorg sync-parsers",
 	config = require("lang.neorg"),
 	dependencies = { "nvim-lua/plenary.nvim" },
